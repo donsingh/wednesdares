@@ -1,5 +1,15 @@
 <?php
 
+/**
+ Complexity:
+ Insert O(log n)
+ Traverse O(n)
+
+ Creates a binary interval tree for the school.
+ Uses BFS for traversal to get chronological enrollees
+
+*/
+
 class School
 {
     public $root;
@@ -48,6 +58,7 @@ class School
     private function canEnroll(Student $node)
     {
         $this->overlap = 0;
+        //BFS traversal to count overlapping students.
         $this->countOverlapping($node, $this->root);
         return $this->overlap < $this->enrollment_limit ?: false;
     }
@@ -58,6 +69,7 @@ class School
             $this->countOverlapping($node, $pointer->left);
         }
         
+        //This is how we determine if two nodes overlap in dates.
         if($node->startDate <= $pointer->endDate && $pointer->startDate <= $node->endDate){
             $this->overlap++;
         }

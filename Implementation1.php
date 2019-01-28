@@ -10,7 +10,6 @@ $data = json_decode($json,true);
 $db = new School();
 
 
-
 foreach($data as $id => $range){
     $param = [
         'startDate' => $range[0],

@@ -1,5 +1,18 @@
 <?php
 
+/**
+Complexity
+
+Insert O(365);
+Traverse O(365 * K)
+where K is the dates enrolled by a given student
+
+This implementation plots an array map for each calendar date that
+a student has enrolled in. This will then add a tally for each date of
+how many students are enrolled.
+
+**/
+
 class School
 {
     protected $calendar = [];
@@ -38,6 +51,9 @@ class School
         }
     }
     
+    //Gets all the dates in the date range and checks if one of dates has enrollement
+    // reaching the limit. If not, get the list of all the dates where the student will
+    // be enrolled.
     public function validEnrollment($start, $end)
     {
         $dates = [];
