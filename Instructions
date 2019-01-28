@@ -1,0 +1,23 @@
+WEDNESDARES
+Coding Challenge:
+
+Scenario
+You work at a school district and your job is to ensure student enrollment does not exceed 100,000 students at any one time because you lack sufficient staffing. Sometimes students are enrolled for the entire school year, and sometimes only for a portion (i.e. a specific date range within that school year). No matter what happens, though, student capacity cannot exceed 100,000.
+
+Each time a new student is enrolled, you must check your enrollment database to ensure that capacity is not exceeded. Previously, you would perform this check manually in an O(n) fashion: it takes you 4 hours to enroll one student (if at all). You decide that this process is too time consuming, and decide to learn programming and write an efficient algorithm.
+
+Example Data
+#suppose all date ranges are between the fixed dates of '2009-01-01' and '2009-12-31'
+[
+  ['2009-01-01', '2009-02-01'],
+  ['2009-01-07', '2009-02-01'],
+  ['2009-01-01', '2009-05-08'],
+  ['2009-03-21', '2009-09-30'],
+  ....
+]
+Questions
+Design a data structure and algorithm that offers the fastest solutions for the following operations and identify their algorithmic complexity. Explain your solutions
+
+Determine whether or not a student can be enrolled in a given date range.
+Add enrollment data to your database (e.g., you have determined that a student can be enrolled and his enrollment data must be added to your database).
+
