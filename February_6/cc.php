@@ -2,32 +2,26 @@
 
 class Find
 {
-    public $words;
-    public $letters;
+    public $words = NULL;
+    public $letters = NULL;
 
     public function __construct()
     {
         $this->load();
     }
 
-    public function getEqualSets()
+    public function load($word_file = "words.txt", $letter_file = "letters.txt")
     {
-        $this->basicFind();
-        print_r($this->words);
-    }
-
-    private function load()
-    {
-        $this->words = explode("\n", file_get_contents("words.txt"));
+        $this->words = explode("\n", file_get_contents($word_file));
         unset($this->words[count($this->words)-1]);
 
-        $this->letters = explode("\n", file_get_contents("letters.txt"));
+        $this->letters = explode("\n", file_get_contents($letter_file));
         unset($this->letters[count($this->letters)-1]);
     }
 
     //O(n*k) time complexity
     //reduced O(n) space complexity
-    private function basicFind()
+    public function basicFind()
     {
         foreach($this->words as $index => $word){
             $found = [];
@@ -40,8 +34,6 @@ class Find
                 unset($this->words[$index]);
             }
         }
+        return $this->words;
     }
 }
-
-$test = new Find();
-$test->getEqualSets();

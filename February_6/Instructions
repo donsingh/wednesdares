@@ -1,0 +1,22 @@
+WEDNESDARES
+Coding Challenge:
+
+Find all words
+
+Given a dictionary of words and a set of letters, find all words from the dictionary the can be formed using the given letters.
+
+Input:
+
+words = {"go","bat","me","eat","goal", "boy", "bee", "run"}
+letters = {'e','o','b', 'a','m','g', 'l'} 
+
+Output
+
+{"go", "me", "goal", "bee"}
+
+Conditions:
+
+The program must accept and parse two text files. First is a file containing the dictionary words where each word is in a single line. The second file contains the letters where each letter is in a single line as well.
+ 
+
+**Deadline of answers is on Friday, February 8, 2019 at 3pm! Winners will be announced on Monday.
