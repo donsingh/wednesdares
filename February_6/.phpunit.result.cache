@@ -1,1 +1,0 @@
-C:30:"PHPUnit\Runner\TestResultCache":248:{a:2:{s:7:"defects";a:3:{s:21:"FinderTest::testHello";i:4;s:20:"FinderTest::testLoad";i:4;s:21:"FinderTest::testBasic";i:5;}s:5:"times";a:3:{s:21:"FinderTest::testHello";d:0.002;s:20:"FinderTest::testLoad";d:0.002;s:21:"FinderTest::testBasic";d:0;}}}
